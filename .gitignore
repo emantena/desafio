@@ -1,0 +1,97 @@
+# Ignore arquivos e pastas gerados pelo sistema operacional
+Thumbs.db
+.DS_Store
+
+# Ignore arquivos de configuração
+*.swp
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore arquivos temporários
+[Tt]emp/
+[Vv]isualStudioCode/
+[Vv]isualStudio2019/
+.vscode/
+
+# Ignore arquivos de build e logs
+bin/
+obj/
+[Ll]og/
+
+# Ignore pacotes e dependências
+node_modules/
+npm-debug.log
+packages/
+
+# Ignore arquivos de compilação .NET
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.exe.config
+
+# Ignore arquivos de compilação Angular
+/dist/
+/node_modules/
+*.log
+
+# Ignore arquivos de usuário
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore arquivos de publicação
+publish/
+
+# Ignore arquivos de configuração do Visual Studio
+.vsconfig
+.vscode
+
+# Ignore arquivos de configuração do Rider
+.idea/
+
+# Angular
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db

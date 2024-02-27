@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <h2>Adicionar tarefa</h2>
+
+  <form [formGroup]="dataForm" (ngSubmit)="addItem()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        formControlName="name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <div cdkDropListGroup>
+    <div class="board-container col-md-3" *ngFor="let column of columns">
+      <h2>{{ column.name }}</h2>
+      <div
+        cdkDropList
+        [cdkDropListData]="column.card"
+        class="board-list"
+        cdkDropListSortingDisabled
+        (cdkDropListDropped)="drop($event, column.statusId)"
+      >
+        <div class="board-box" *ngFor="let card of column.card" cdkDrag>
+          {{ card.name }}
+          <span class="edit-icon">
+            <i class="fas fa-edit"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
